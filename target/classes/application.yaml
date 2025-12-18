@@ -1,0 +1,31 @@
+#spring.application.name=charityboard
+
+server:
+  port: 8080
+  servlet:
+    context-path: /api/v1
+
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/studylance_db
+    username: postgres
+    password: postgres
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+
+jwt:
+  secret: eyJhbGciOiJIUzI1NiJ9.eyJSb2xlIjoiQWRtaW4iLCJJc3N1ZXIiOiJJc3N1ZXIiLCJVc2VybmFtZSI6IkphdmFJblVzZSIsImV4cCI6MTcxNDQ5MjgyMywiaWF0IjoxNzE0NDkyODIzfQ.9IXHCTYz4VVHxfMEmkhL4m-EKWtlF8lQOTVQBZQuv8A
+  lifetime: 30m
+
+logging:
+  level:
+    org:
+      springframework:
+        web: DEBUG

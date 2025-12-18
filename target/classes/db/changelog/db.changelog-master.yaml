@@ -1,0 +1,21 @@
+databaseChangeLog:
+  - include:
+      file: db/changelog/changeset/init-db.sql
+  - include:
+      file: db/changelog/changeset/insert.sql
+  - include:
+      file: db/changelog/changeset/insert-2.sql
+  - include:
+      file: db/changelog/changeset/insert-userprofiles.sql
+  - include:
+      file: db/changelog/changeset/task-workflow.sql
+  - include:
+      file: db/changelog/changeset/reviews.sql
+  - include:
+      file: db/changelog/changeset/seed-user-roles.sql
+  - include:
+      file: db/changelog/changeset/complaints.sql
+  - include:
+      file: db/changelog/changeset/post-avatars.sql
+  - include:
+      file: db/changelog/changeset/fix-sequences.sql
